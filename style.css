@@ -1,0 +1,121 @@
+:root{
+    --primaryColor: #00dd00;
+    --whiteColor: #ffffff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+button{
+    font-size: 13px;
+    padding: 5px;
+}
+
+button:not(:last-child){
+    margin-right: 5px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    height: 100vh;
+    width: 100%;
+    background-image: url('imgs/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box{
+    background-color: rgba(0,0,0,0.5);
+    width: 60%;
+    flex-direction: column;
+    padding: 0 70px;
+    height: 95%;
+}
+
+.logo{
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.logo img{
+    height: 90px;
+    margin-bottom: 8px;
+}
+
+.buttons-wrap{
+    position: relative;
+}
+
+.green-bg{
+    background-color: var(--primaryColor);
+    width: calc(100% - 32px);
+    padding: 16px;
+}
+
+.tagline{
+    color: var(--primaryColor);
+    font-size: 27px;
+}
+
+.content{
+    color: var(--whiteColor);
+    width: 100%;
+    margin-top: 24px;
+}
+
+.content .ribbon{
+    height: 30px;
+    background-color: var(--primaryColor);
+    border-radius: 4px;
+}
+
+.content .txt-row-1 img{
+    height: 10px;
+    margin-right:5px;
+}
+
+.content .txt-row-1 {
+    font-size: 22px;
+}
+
+.content .txt-row-2 img{
+    height: 6px;
+    margin-right:5px;
+}
+
+.content .txt-row-2 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.content .txt-row-3 {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.content.content-row-1 .ribbon{
+    width: 35%;
+}
+
+.content.content-row-2 .ribbon{
+    width: 70%;
+}
+
+.content.content-row-3 .ribbon{
+    width: 15%;
+    background-color: rgb(146, 40, 58);
+    border: 1px solid rgb(167, 49, 69);;
+}
